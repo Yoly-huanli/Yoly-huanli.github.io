@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <meta charset="UTF-8">
+		<title>上传文件</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="./static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./static/css/weadmin.css">
+		<link rel="stylesheet" href="./static/css/main.css">
+		<script src="./static/js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="./static/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./static/js/main.js" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+	  <script type="text/javascript" src="./static/js/fixed.js"></script>
+	  <div class="page-content">
+		<div class="weadmin-nav">
+				<span>
+			        <a href="">首页></a>
+			        <a href="">学生端></a>
+			        <a>
+			          <cite>上传文件</cite>
+			        </a>
+			    </span>
+	         </div>
+		<div class="weadmin-body">
+		   <div class="layui-form" action="">
+			  <div class="layui-form-item">
+					<label class="layui-form-label">输入id</label>
+					<div class="layui-input-inline">
+					   <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入ID" class="layui-input">
+				   </div>
+			  </div>
+		   <!--    <div class="layui-form-item">
+		        <div class="layui-input-block">
+		           <button type="button" class="layui-btn" id="test3">上传文件</button>
+		        </div>
+		      </div>
+ -->            <div class="layui-form-item fileinput-button">
+              <div class="layui-input-block">
+	              <span class="layui-btn">上传</span>
+	              <input type="file">
+              </div>
+            </div>
+
+		      <div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <a class="layui-btn" lay-submit="" lay-filter="demo1" href="">提交</a>
+				    </div>
+			  </div>
+		    </div>
+        </div>
+
+
+<!--         <script>
+		layui.use('upload', function(){
+		  var $ = layui.jquery
+		  ,upload = layui.upload;
+
+		  upload.render({ //允许上传的文件后缀
+		    elem: '#test3'
+		    ,url: '/upload/'
+		    ,accept: 'file' //普通文件
+		    ,exts: 'doc|pdf' //只允许上传压缩文件
+		    ,done: function(res){
+		      console.log(res)
+		    }
+		  });
+		});
+		</script> -->
+	</div>
+    </body>
+
+</html>

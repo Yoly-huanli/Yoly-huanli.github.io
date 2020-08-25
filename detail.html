@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>学生列表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="./static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/weadmin.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <script src="./static/js/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="./static/lib/layui/layui.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./static/js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="./static/js/fixed.js"></script>
+  <div class="page-content">
+    <div class="weadmin-nav">
+      <span>
+        <a href="">首页></a>
+        <a href="">管理员端></a>
+        <a href="">开始查重></a>
+        <a>
+          <cite>学生列表</cite>
+        </a>
+      </span>
+    </div>
+    <div class="weadmin-body">
+      <table class="layui-table">
+        <thead>
+          <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>提交状态</th>
+            <th>重复率</th>
+            <th>操作</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14010180018</td>
+              <td>章小蕙</td>
+              <td>已提交</td>
+              <td>80%</td>
+              <td class="td-manage">
+                <a href="">
+                  查看详情
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<!-- 分页 -->
+<div class="layui-box layui-laypage own-coverd">
+   <a href="javascript:;" class="layui-laypage-prev layui-disabled" >上一页</a>
+   <a href="javascript:;">1</a>
+   <a href="javascript:;">2</a>
+   <a href="javascript:;">3</a>
+   <a href="javascript:;">4</a>
+   <a href="javascript:;">5</a>
+   <span class="layui-laypage-spr">…</span>
+   <a href="javascript:;">6</a>
+   <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
+</div>
+
+
+
+      </div>
+    </div>
+  </body>
+
+  </html>

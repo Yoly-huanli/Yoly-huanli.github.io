@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <meta charset="UTF-8">
+		<title>开始查重</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link href="./static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./static/css/weadmin.css">
+		<link rel="stylesheet" href="./static/css/main.css">
+		<script src="./static/js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="./static/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./static/js/main.js" charset="utf-8"></script>
+
+	</head>
+	<body>
+	    <script type="text/javascript" src="./static/js/fixed.js"></script>
+	    <div class="page-content">
+		    <div class="weadmin-nav">
+				<span>
+			        <a href="">首页></a>
+			        <a href="">管理员管理></a>
+			        <a>
+			          <cite>开始查重</cite>
+			        </a>
+			    </span>
+	         </div>
+			<div class="weadmin-body">
+			   <div class="layui-form" action="">
+				  <div class="layui-form-item">
+				    <label class="layui-form-label">课程名称</label>
+				    <div class="layui-input-inline">
+				      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+				    </div>
+				  </div>
+				   <div class="layui-form-item">
+			         <label class="layui-form-label">课程代号</label>
+			         <div class="layui-input-inline">
+				        <select name="modules" lay-verify="required" lay-search="">
+				          <option value="">课程代号</option>
+				          <option value="1">XD788900</option>
+				          <option value="2">VF677890</option>
+				        </select>
+	                 </div>
+	               </div>
+
+	               <div class="layui-form-item">
+				    <label class="layui-form-label">任课教师</label>
+				    <div class="layui-input-inline">
+				      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+				    </div>
+				  </div>
+				  <div class="layui-form-item">
+			         <label class="layui-form-label">选择班级</label>
+			         <div class="layui-input-inline">
+				        <select name="modules" lay-verify="required" lay-search="">
+				          <option value="">选择班级</option>
+				          <option value="1">1801028班</option>
+				          <option value="2">1801014班</option>
+				        </select>
+	                 </div>
+	               </div>
+	               <div class="layui-form-item">
+			         <label class="layui-form-label">查重方式</label>
+			         <div class="layui-input-inline">
+				        <select name="modules" lay-verify="required" lay-search="">
+				          <option value="">选择查重方式</option>
+				          <option value="1">只查代码</option>
+				          <option value="2">只查文本</option>
+				          <option value="3">全部查重</option>
+				        </select>
+	                 </div>
+	               </div>
+	               <div class="layui-form-item">
+			         <label class="layui-form-label">选择学年</label>
+			         <div class="layui-input-inline">
+				        <select name="modules" lay-verify="required" lay-search="">
+				          <option value="">选择课程学年</option>
+				          <option value="1">2018</option>
+				          <option value="2">2017</option>
+				          <option value="3">2016</option>
+				        </select>
+	                 </div>
+	               </div>
+	               <div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <a class="layui-btn" lay-submit="" lay-filter="demo1" href="" id="lookover">立即查看</a>
+				    </div>
+				  </div>
+			   </div>
+	        </div> 
+        </div>
+        <div id= "alertdialog" class="layui-layer layui-layer-dialog layui-layer-border layui-layer-msg" type="dislog" style="z-index:19891024;left:50%;top:50%;display:block" contype="string" >
+        	<div class="layui-layer-content layui-layer-padding">
+        		<i class="layui-layer-ico layui-layer-ico5"></i>
+        		这里可以显示错误信息	
+        	</div>
+        	<span class="layui-layer-setwin"></span>
+        </div>
+    </body>
+
+</html>
